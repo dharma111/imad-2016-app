@@ -12,6 +12,12 @@ app.get('/', function (req, res) {
 app.get('/page1',function (req, res){
     res.send(" woohoo page one opened");
 });
+app.get('/page2',function (req, res){
+    res.send(" woohoo page two opened");
+});
+app.get('/page3',function (req, res){
+    res.send(" woohoo page three opened");
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
