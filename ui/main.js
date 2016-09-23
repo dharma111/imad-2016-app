@@ -1,3 +1,3 @@
 console.log('Loaded!');
-var element = document.getElementById("text-content")
+var element = document.getElementById("text-content");
 element.innerHTML=" java code edited this ";
