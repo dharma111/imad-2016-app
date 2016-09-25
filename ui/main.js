@@ -1,16 +1,19 @@
 console.log('Loaded!');
-var element = document.getElementById("text-content");
-var madi = document.getElementById('img');
-madi.onclick=function(){
-    var time=setInterval(moveRight,50);
-};
-var leftmargin=0;
-function moveRight()
+var image=document.getElementById('img');
+var rightmargin=o;
+function moveLeft()
 {
-    leftmargin=leftmargin+5;
-img.style.marginLeft=leftmargin+'px';
-    
+    rightmargin=rightmargin+10;
+    image.style.marginRight=rightmargin;
+
 }
+
+image.onclick= function(){
+
+    var int=setInterval(moveLeft,50);
+};
+
+
 
 
 
