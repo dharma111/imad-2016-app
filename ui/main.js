@@ -2,7 +2,7 @@ console.log('Loaded!');
 var element = document.getElementById("text-content");
 var madi = document.getElementById('img');
 madi.onclick=function(){
-    var time=setInterval(moveRight,50);
+    var time=setInterval(moveRight,500);
 };
 var leftmargin=0;
 function moveRight()
