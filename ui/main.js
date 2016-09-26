@@ -1,4 +1,6 @@
 console.log('Loaded!');
+//Moving madi on a click in page1
+
 var image=document.getElementById('img');
 var rightmargin=0;
 function moveLeft()
