@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var image=document.getElementById('img');
-var rightmargin=o;
+var rightmargin='opx';
 function moveLeft()
 {
     rightmargin=rightmargin+10;
