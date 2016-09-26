@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var image=document.getElementById('img');
-var rightmargin='opx';
+var rightmargin=0;
 function moveLeft()
 {
     rightmargin=rightmargin+10;
@@ -10,7 +10,7 @@ function moveLeft()
 
 image.onclick= function(){
 
-    var int=setInterval(moveLeft,50);
+    var int = setInterval(moveLeft,50);
 };
 
 
