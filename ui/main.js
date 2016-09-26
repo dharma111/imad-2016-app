@@ -7,8 +7,7 @@ console.log('Loaded!');
 
 var button = document.getElementById('button');
 var clicks=0;
-button.onclick = function ()
-{
+button.onclick = function () {
     
      clicks=clicks+1;
      var span=document.getElementById('span');
