@@ -1,1 +1,2 @@
-var page2=0;
+//Javascript for second page :)
+
