@@ -5,13 +5,13 @@ console.log('Loaded!');
 //Javascript for second page :)
 //counting number of clicks
 var clicks=0;
-var counting=document.getElementById('counter');
-counting.onclick=function()
+var button=document.getElementById('counter');
+button.onclick=function()
 {
     
      clicks=clicks+1;
-     var number=document.getElementById('count');
-    number.innerHTML = clicks.toString();
+     var span=document.getElementById('count');
+    span.innerHTML = clicks.toString();
 };
 
 
