@@ -14,7 +14,8 @@ app.get('/page1',function (req, res){
     
 });
 app.get('/page2',function (req, res){
-    res.send(" woohoo page two opened");
+    res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
+    
 });
 app.get('/page3',function (req, res){
     res.send(" woohoo page three opened");
