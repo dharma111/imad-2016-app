@@ -4,7 +4,7 @@ var rightmargin='opx';
 function moveLeft()
 {
     rightmargin=rightmargin+10;
-    image.style.marginRight=rightmargin;
+    image.style.marginRight=rightmargin+'px';
 
 }
 
