@@ -4,8 +4,9 @@ console.log('Loaded!');
 
 //Javascript for second page :)
 //counting number of clicks
-var clicks=0;
+
 var button = document.getElementById('button');
+var clicks=0;
 button.onclick = function ()
 {
     
