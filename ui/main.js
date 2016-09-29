@@ -26,7 +26,7 @@ button.onclick = function () {
               
           }  
 };
-request.open('GET','http://dharma11.imad.hasura-app.io/counter',true);
+request.open('GET','http://dharma111.imad.hasura-app.io/counter',true);
 request.send(null);
 
        
