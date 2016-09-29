@@ -7,6 +7,7 @@ console.log('Loaded!');
 
 var button = document.getElementById("button");
 
+var counter;
 button.onclick = function () {
     
     
@@ -19,7 +20,7 @@ button.onclick = function () {
           {
                if(request.status===200)
               {
-              var counter=request.responseText;
+              counter=request.responseText;
               var test=document.getElementById('span');
               test.innerHTML = counter.toString();
            
