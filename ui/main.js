@@ -6,14 +6,35 @@ console.log('Loaded!');
 //counting number of clicks
 
 var button = document.getElementById("button");
-var clicks=0;
+
 button.onclick = function () {
     
-     clicks=clicks+1;
-     var span=document.getElementById("span");
-    span.innerHTML = clicks.toString();
+    
+    var request= new XMLhttpRequest();
+   
+   
+   request.onreadystatechange=function(){
+       if(request.readystate===XMLhttpRequest.DONE)
+          {
+               if(request.status===200)
+              {
+              var counter=request.responseText;
+              var span=document.getElementById("span");
+              span.innerHTML = counter.toString();
+           
+               }
+              
+          }  
 };
+request.open('GET','http:dharma11.imad.hasura-app.io/counter',true);
+request.send(null);
 
+       
+   
+    
+
+    
+};
 
 
 
