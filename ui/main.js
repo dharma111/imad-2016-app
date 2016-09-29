@@ -10,7 +10,7 @@ var button = document.getElementById("button");
 button.onclick = function () {
     
     
-    var request= new XMLhttpRequest();
+    var request= new XMLHttpRequest();
    
    
    request.onreadystatechange=function(){
