@@ -32,4 +32,5 @@ body {
 .submitting
 {
     text-align: center;
+    list-style-position: inside;
 }
