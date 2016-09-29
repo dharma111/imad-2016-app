@@ -43,7 +43,7 @@ submit.onclick=function()
     {
         list +='<li>' +namelist[i]+ '</li>' ;
     }
-    var ul=document.getElementById(listed);
+    var ul=document.getElementById('listed');
     ul.innerHTML=list;
 };
        
