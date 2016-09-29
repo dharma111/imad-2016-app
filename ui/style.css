@@ -20,5 +20,12 @@ body {
     height: 200px;
 }
 
-.container
-{text-align: center;}
+#button
+{
+    color: red;
+    background-color: blue;
+    font-weight: bold;
+    font-family: italics;
+    
+    
+}
