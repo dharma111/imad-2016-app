@@ -39,7 +39,7 @@ submit.onclick=function()
     var namelist=['dharma','janu','sorna','ramachandran'];
     
     var list=' ';
-    for(var i=0; i<namelist.lenght; i++)
+    for(var i=0; i<namelist.length; i++)
     {
         list +='<li>' +namelist[i]+ '</li>' ;
     }
