@@ -29,10 +29,12 @@ button.onclick = function () {
           }  
 
    }; 
+
+    request.open('GET','http://dharma111.imad.hasura-app.io/counter',true);
+request.send(null);
 };
 
-request.open('GET','http://dharma111.imad.hasura-app.io/counter',true);
-request.send(null);
+
 //name input
 var nameinput=document.getElementById('name');
 var nam=nameinput.value;
