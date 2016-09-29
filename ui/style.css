@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: lightgrey;
-    margin-top: 75px;
+    margin-top: 0px;
 }
 
 .center {
@@ -28,4 +28,8 @@ body {
     font-family: italics;
     font-size: 200%;
     
+}
+.submitting
+{
+    text-align: center;
 }
