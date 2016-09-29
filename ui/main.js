@@ -34,7 +34,8 @@ request.send(null);
 var nameinput=document.getElementById('name');
 var name=nameinput.value;
 var submit=document.getElementById('submit_btn');
-submit.onclick=function(){
+submit.onclick=function()
+{
     var namelist=['dharma','janu','sorna','ramachandran'];
     
     var list=' ';
@@ -44,10 +45,6 @@ submit.onclick=function(){
     }
     var ul=document.getElementById(listed);
     ul.innerHTML=list;
-    
-
-    
-    
 };
        
    
