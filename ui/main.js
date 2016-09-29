@@ -2,7 +2,7 @@ console.log('Loaded!');
 //Moving madi on a click in page1
 
 
-//Javascript for second page :)
+
 //counting number of clicks
 
 var button = document.getElementById("button");
@@ -30,13 +30,31 @@ button.onclick = function () {
 };
 request.open('GET','http://dharma111.imad.hasura-app.io/counter',true);
 request.send(null);
+//name input
+var nameinput=document.getElementById('name');
+var name=nameinput.value;
+var submit=document.getElementById('submit_btn');
+submit.onclick=function(){
+    var namelist=['dharma','janu','sorna','ramachandran'];
+    
+    var list=' ';
+    for(var i=0; i<namelist.lenght; i++)
+    {
+        list +='<li>' +namelist[i]+ '</li>' ;
+    }
+    var ul=document.getElementById(listed);
+    ul.innerHTML=list;
+    
 
+    
+    
+};
        
    
     
 
     
-};
+
 
 
 
