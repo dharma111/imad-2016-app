@@ -27,22 +27,25 @@ button.onclick = function () {
                }
               
           }  
+
+   }; 
 };
+
 request.open('GET','http://dharma111.imad.hasura-app.io/counter',true);
 request.send(null);
 //name input
 var nameinput=document.getElementById('name');
-var name=nameinput.value;
+var nam=nameinput.value;
 var submit=document.getElementById('submit_btn');
-submit.onclick=function()
+submit.onclick = function ()
 {
-    var namelist=['dharma','janu','sorna','ramachandran'];
+    var namelist = ['dharma','janu','sorna','ramachandran'];
     
     var list=' ';
-    for(var i=0; i<namelist.length; i++)
-    {
-        list +='<li>' +namelist[i]+ '</li>' ;
-    }
+    for(var i=0; i<namelist.length; i++){
+    
+        list +='<li>' +namelist[i]+ '</li>' ;}
+    
     var ul=document.getElementById('listed');
     ul.innerHTML=list;
 };
