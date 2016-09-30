@@ -67,7 +67,7 @@ submit.onclick = function ()
           }
    };
 
-request.open('GET','http://dharma111.imad.hasura-app.io/submit-name?='+nam,true);
+request.open('GET','http://dharma111.imad.hasura-app.io/submit-name?name='+nam,true);
     request.send(null);                  
 };
        
