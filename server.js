@@ -9,12 +9,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/page1',function (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
-    
-});
-app.get('/page2',function (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
+var names=[];
+app.get('/submit-name',function(req, res){
+    var name=req.query.name;
+    names.push(name);
+    res.sendfile(JSON.stringify(names));
+
     
 });
 app.get('/counter',function (req, res){
@@ -33,12 +33,7 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js',function(req, res){
     res.sendfile(path.join(__dirname, 'ui' , 'main.js'));
     
-});
-var names=[];
-app.get('/submit-name',function(req, res){
-    var name=req.query.name;
-    names.push(name);
-    res.sendfile(JSON.stringify(names));
+
     
 });
 
