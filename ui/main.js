@@ -51,7 +51,7 @@ submit.onclick = function ()
               {
     
     
-                   var namelist=request.response.Text;
+                   var namelist=request.responseText;
                    namelist=JSON.parse(namelist);
               
     
