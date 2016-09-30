@@ -36,8 +36,7 @@ button.onclick = function () {
 
 
 //name input
-var nameinput=document.getElementById('name');
-var nam=nameinput.value;
+
 var submit=document.getElementById('submit_btn');
 submit.onclick = function ()
 {
@@ -66,7 +65,8 @@ submit.onclick = function ()
               }
           }
    };
-
+var nameinput=document.getElementById('name');
+var nam=nameinput.value;
 request.open('GET','http://dharma111.imad.hasura-app.io/submit-name?name='+nam,true);
     request.send(null);                  
 };
