@@ -52,7 +52,7 @@ submit.onclick = function ()
     
     
                    namelist=request.response.Text;
-                   namelist=JSON.parse(names);
+                   namelist=JSON.parse(namelist);
               
     
     var list=' ';
