@@ -41,7 +41,20 @@ var nam=nameinput.value;
 var submit=document.getElementById('submit_btn');
 submit.onclick = function ()
 {
-    var namelist = ['dharma','janu','sorna','ramachandran'];
+    var request= new XMLHttpRequest();
+   
+   
+   request.onreadystatechange=function()
+   {
+       if(request.readyState===XMLHttpRequest.DONE)
+          {
+               if(request.status===200)
+              {
+    
+    
+                   namelist=request.response.Text;
+                   namelist=JSON.parse(names);
+              
     
     var list=' ';
     for(var i=0; i<namelist.length; i++){
@@ -50,6 +63,12 @@ submit.onclick = function ()
     
     var ul=document.getElementById('listed');
     ul.innerHTML=list;
+              }
+          }
+   };
+
+request.open('GET','http://dharma111.imad.hasura-app.io/submit-name?='+nam,true);
+    request.send(null);                  
 };
        
    
