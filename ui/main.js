@@ -70,6 +70,13 @@ var nam=nameinput.value;
 request.open('GET','http://dharma111.imad.hasura-app.io/submit-name?name='+nam,true);
     request.send(null);                  
 };
+var like=document.getElementById('like');
+like.onclick=function(){
+    like.innerHTML='liked';
+
+    
+};
+
        
    
     
